@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: black;
+}
+
+button.submit {
+ font-color: #1C1C1C;
+  
+}
+
+
+#stage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+form {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid 292929;
+    background-color: #333;
+    color: 292929;
+    border-radius: 4px;
+
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #555;
+       color: #959595;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1C1C1C;
+}
+
+ #menuButton:hover {
+ background-color: #1C1C1C;
+}
+
+#sizeValue{
+  color: #333;
+}
+
+ #toggleButton:hover {
+ background-color: #1C1C1C;
+}
+
+#controls {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+ color: #333;
+accent-color: #1C1C1C;
+  
+}
+
+
+#sizeSlider {
+    width: 300px;
+  
+}
+
+
+
+
+#toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#toggleButton::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color:#959595;
+    transform: rotate(45deg);
+}
+
+#menuButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #959595;
+}
+
+.hidden {
+    display: none;
+}
+
+#imageMenu {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: #0C0C0C;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#imageMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#imageMenu li {
+    padding: 10px;
+    cursor: pointer;
+   color: #666666;
+}
+
+#imageMenu li:hover {
+    background-color: #555;
+     color: #838383;
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transform-origin: center;
+}
